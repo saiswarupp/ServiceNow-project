@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7e4efd38c3fe66102584153ed401312e" label="Company Profile" max_length="40" name="x_1803210_students_company_profile" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Contact Person" max_length="40" name="contact_person" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="it" label="Industry Type" max_length="40" name="industry_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Manufacturing" value="manufacturing"/>
+                <element inactive_on_update="false" label="Consulting" value="consulting"/>
+                <element inactive_on_update="false" label="IT" value="it"/>
+                <element inactive_on_update="false" label="Finance" value="finance"/>
+            </choice>
+        </element>
+        <element label="Phone" max_length="40" name="phone" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
+        <element label="Registration Date" max_length="40" name="registration_date" type="integer"/>
+    </element>
+</database>
