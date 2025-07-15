@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="16afb9b8c3fe66102584153ed4013188" label="Job Posting" max_length="40" name="x_1803210_students_job_posting" type="collection">
+        <element label="Job Posting" max_length="32" name="job_posting" reference="x_1803210_students_job_posting" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Department Eligible" max_length="40" name="department_eligible" type="string"/>
         <element label="Min CGPA" max_length="15" name="min_cgpa" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="open" label="Status" max_length="40" name="status" type="choice">
@@ -15,6 +16,9 @@
         <element attributes="edge_encryption_enabled=true" label="Title" max_length="40" name="title" type="string"/>
         <index name="index">
             <element name="company"/>
+        </index>
+        <index name="index2">
+            <element name="job_posting"/>
         </index>
     </element>
 </database>
